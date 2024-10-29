@@ -1,8 +1,10 @@
+//@ts-nocheck
 "use client";
 import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { IoIosArrowDown } from "react-icons/io";
 import { Toaster, toast } from "react-hot-toast";
+import { supabase } from '@/lib/supabaseClient'; // Importa el cliente de Supabase
 
 const contactPlans = [
   { id: 1, title: "Base" },
@@ -31,27 +33,22 @@ export default function ContactForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const { data, error } = await supabase
+        .from("leads") // Cambia 'contact_requests' al nombre de tu tabla
+        .insert([formData]);
 
-      if (response.ok) {
-        const data = await response.json();
+      if (error) {
+        console.error("Error al enviar el formulario:", error);
+        toast.error("Hubo un error al enviar el formulario.");
+      } else {
         toast.success("Formulario enviado con éxito");
         
-        //setFormData({
-        //  name: "",
-        //  email: "",
-        //  message: "",
-        //  plan: "",
-        //});
-      } else {
-        console.error("Error al enviar el formulario:", response.status);
-        toast.error("Hubo un error al enviar el formulario.");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          plan: "",
+        });
       }
     } catch (error) {
       console.error("Error en la solicitud:", error);

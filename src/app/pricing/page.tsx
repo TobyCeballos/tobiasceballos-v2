@@ -5,76 +5,67 @@ import { IoIosArrowDown } from "react-icons/io";
 import Modal from "./components/Modal"; // Importa el componente modal
 
 const pricingPlans = [
-  {
-    "id": 1,
-    "title": "Base",
-    "price": "$18.699/mes",
-    "description": "Ideal para proyectos iniciales o personales",
-    "features": [
-      "Landing page estática con diseño básico",
-      "Mantenimiento mensual (1-2 actualizaciones)",
-      "Community Management: 1 publicación semanal en Facebook o Instagram",
-      "SEO básico y optimización de imágenes",
-      "Integración con Google Analytics",
-      "Formulario de contacto con notificación por correo",
-      "Soporte por correo electrónico (respuesta en menos de 12 horas)"
-    ],
-    "link": "/planes/basico"
-  },
-  {
-    "id": 2,
-    "title": "Avanzado",
-    "price": "$26.499/mes",
-    "description": "Enfocado en pequeños negocios en crecimiento",
-    "features": [
-      "Desarrollo de sitio web de hasta 5 páginas con diseño responsive",
-      "Mantenimiento mensual extendido",
-      "SEO avanzado y optimización de velocidad",
-      "Community Management: 2 publicaciones semanales y 1 historia en Facebook e Instagram",
-      "Integración con Google My Business",
-      "Reportes básicos de Google Analytics",
-      "Formulario de contacto personalizado",
-      "Soporte por email y WhatsApp (respuesta en menos de 12 horas)"
-    ],
-    "link": "/planes/negocios"
-  },
-  {
-    "id": 3,
-    "title": "Premium",
-    "price": "$47.399/mes",
-    "description": "Perfecto para empresas medianas con necesidades avanzadas",
-    "features": [
-      "Desarrollo de sitio web completo (hasta 10 páginas)",
-      "Mantenimiento mensual avanzado",
-      "SEO completo con optimización de conversión (CRO)",
-      "Community Management completo: 3 publicaciones semanales, diseño de historias y respuesta a mensajes",
-      "Campañas publicitarias básicas y automatización de marketing",
-      "Google Analytics con reportes avanzados",
-      "Chat en vivo integrado",
-      "Reportes detallados de rendimiento",
-      "Soporte premium con resolución en menos de 12 horas"
-    ],
-    "link": "/planes/empresa"
-  },
-  {
-    "id": 4,
-    "title": "Corporativo",
-    "price": "Personalizado/mes",
-    "description": "Soluciones a medida para grandes empresas y corporaciones",
-    "features": [
-      "Desarrollo de aplicaciones web personalizadas con funcionalidades avanzadas",
-      "Integraciones de sistemas (CRM, ERP, etc.)",
-      "Mantenimiento y monitoreo continuo de infraestructura en producción",
-      "Community Management estratégico: 7 publicaciones semanales y campañas publicitarias avanzadas",
-      "Análisis de competencia y estrategias SEO personalizadas",
-      "Automatización avanzada de marketing y A/B testing",
-      "Dashboard de datos personalizados y reportes detallados",
-      "Soporte dedicado y reuniones mensuales (respuesta en menos de 12 horas)"
-    ],
-    "link": "/planes/corporativo"
-  }
-]
-
+    {
+      "id": 1,
+      "title": "Base",
+      "price": "$18.699/mes",
+      "description": "Ideal para proyectos iniciales o personales",
+      "features": [
+        "Desarrollo de una landing page estática",
+        "Actualizaciones de contenido básico mensuales",
+        "Community Management básico: 1 publicación semanal en Facebook o Instagram",
+        "Asesoría inicial en estrategia de contenido y recomendaciones",
+        "Soporte técnico en horario de oficina (vía email)",
+        "Consultoría mensual de 30 minutos para revisión y optimización del sitio"
+      ],
+      "link": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380849295664c0192d43a8c9712b3"
+    },
+    {
+      "id": 2,
+      "title": "Avanzado",
+      "price": "$26.499/mes",
+      "description": "Enfocado en pequeños negocios en crecimiento",
+      "features": [
+        "Desarrollo de sitio web de hasta 5 páginas con diseño responsive",
+        "Integración de formularios avanzados (incluyendo notificaciones por email)",
+        "Community Management Avanzado: 3 publicaciones semanales en Facebook e Instagram",
+        "Monitoreo de interacciones y respuestas a mensajes directos básicos",
+        "Soporte técnico intermedio: disponibilidad en horario extendido",
+        "Consultoría de marketing digital mensual (1 hora) con enfoque en estrategias de crecimiento"
+      ],
+      "link": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084929566050192d43b9cf6132a"
+    },
+    {
+      "id": 3,
+      "title": "Premium",
+      "price": "$47.399/mes",
+      "description": "Perfecto para empresas medianas con necesidades avanzadas",
+      "features": [
+        "Desarrollo de aplicación web o e-commerce con integraciones de pago seguras",
+        "Optimización de rendimiento (SEO técnico avanzado y mejoras de velocidad)",
+        "Community Management completo: 5 publicaciones semanales en Facebook, Instagram y LinkedIn",
+        "Monitoreo y respuesta activa a mensajes y comentarios en tiempo real",
+        "Soporte técnico avanzado con resolución en 24 horas (chat y email)",
+        "Consultoría técnica mensual (2 horas) para estrategias de escalabilidad y crecimiento de la aplicación"
+      ],
+      "link": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084929566050192d43c6d34132b"
+    },
+    {
+      "id": 4,
+      "title": "Corporativo",
+      "price": "Personalizado/mes",
+      "description": "Soluciones a medida para grandes empresas y corporaciones",
+      "features": [
+        "Desarrollo de aplicaciones web personalizadas con arquitectura escalable y microservicios",
+        "Mantenimiento y monitoreo continuo de infraestructura en producción",
+        "Community Management estratégico: 7 publicaciones semanales en múltiples plataformas y campañas pagas",
+        "Creación y optimización de campañas publicitarias en redes sociales y Google Ads",
+        "Consultoría y soporte técnico dedicado 24/7 con SLA personalizado",
+        "Asesoría en tecnología emergente (IA, automatización de flujos, analítica avanzada)"
+      ],
+      "link": "https://wa.link/md55ms"
+    }
+  ]
   
   
 

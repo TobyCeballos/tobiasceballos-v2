@@ -37,12 +37,12 @@ export default function Modal({ onClose, plan }) {
             ))}
           </ul>
         </div>
-        <button
-          onClick={() => console.log("Comprado")}
-          className="w-full mt-4 px-4 py-2 bg-rose-500 text-white rounded-b hover:bg-rose-600 transition"
+        <a
+          href={plan.link}
+          className="block text-center mt-4 px-4 py-2 bg-rose-500 text-white rounded-b hover:bg-rose-600 transition"
         >
           Contratar
-        </button>
+        </a>
       </div>
     </div>
   );
