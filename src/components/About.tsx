@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-center md:justify-between">
         {/* Imágenes apiladas */}
-        <div className="relative w-full md:w-1/2 flex justify-center md:justify-start mb-12 md:mb-0">
+        <div className="relative w-1/3 md:w-1/2 flex justify-center md:justify-start mb-12 md:mb-0">
           {/* Primera imagen (más grande y en primer plano) */}
           <Image
             src="/assets/Lucho.png"

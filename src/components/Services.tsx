@@ -49,8 +49,8 @@ const ServicesSection = () => {
   return (
     <section className="py-20 bg-slate-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-red-500 font-bold text-3xl mb-2">Nuestros Servicios</h2>
-        <h3 className="text-7xl text-black font-serif font-bold mb-8">Servicios adaptables<br/>a tus necesidades</h3>
+        <h2 className="text-red-500 font-bold text-xl lg:text-3xl mb-2">Nuestros Servicios</h2>
+        <h3 className="text-4xl lg:text-7xl text-black font-serif font-bold mb-8">Servicios adaptables<br/>a tus necesidades</h3>
 
         <div className="grid grid-cols-1 text-left md:grid-cols-3 gap-16">
           {services.map((service, index) => (

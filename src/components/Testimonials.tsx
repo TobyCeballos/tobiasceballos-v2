@@ -57,7 +57,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="flex flex-col items-center justify-center px-8 py-16 bg-white rounded-lg shadow-md">
-      <div className="flex flex-col items-center bg-[#f5f4f5] w-3/4 rounded-3xl p-10 space-y-3">
+      <div className="flex flex-col items-center bg-[#f5f4f5] w-full md:w-3/4 rounded-3xl p-10 space-y-3">
         <div
           className={`w-40 h-40 rounded-full overflow-hidden transition-opacity duration-500 ${
             fade ? "opacity-100" : "opacity-0"

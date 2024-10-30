@@ -4,13 +4,13 @@ export function HeroSection() {
   return (
     <section className="max-w-7xl mx-auto mb-20">
       <div className="">
-        <div className="">
+        <div className=" flex justify-center lg:justify-start">
           <Badge variant="outline" className="border-red-500 mt-10 text-red-500">
             Nosotros
           </Badge>
         </div>
-        <h1 className="text-5xl font-bold mt-4 mb-6">Creando experiencias digitales</h1>
-        <p className="text-neutral-400 text-2xl max-w-2xl">
+        <h1 className="text-5xl font-bold  text-center lg:text-left mt-4 mb-6">Creando experiencias digitales</h1>
+        <p className="text-neutral-400 text-center lg:text-left text-2xl max-w-2xl">
         Somos un equipo de creadores apasionados, innovadores y solucionadores de problemas dedicados a transformar ideas en soluciones digitales impactantes.
         </p>
       </div>
