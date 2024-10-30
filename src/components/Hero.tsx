@@ -12,15 +12,15 @@ const Hero: React.FC = () => {
       {/* Contenido principal */}
       <div className="flex flex-col-reverse lg:justify-center md:flex-row w-full md:container mx-auto px-6 lg:px-12 py-20 items-center justify-between gap-8 lg:gap-16">
         {/* Texto y botones */}
-        <div className="flex text-nowrap flex-col text-center md:text-left w-full md:w-1/2 space-y-6">
+        <div className="flex text-wrap md:text-nowrap flex-col text-center md:text-left w-full md:w-1/2 space-y-6">
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-semibold leading-tight">
-            Desarrollamos tu <br />
-            <span className="text-red-600">idea</span> en aplicaciones <br />y
-            sitios web <span className="text-red-600">modernos</span> <br />y{" "}
+            Desarrollamos tu <br className="hidden md:flex" />
+            <span className="text-red-600">idea</span> en aplicaciones <br className="hidden md:flex" />y
+            sitios web <span className="text-red-600">modernos</span> <br className="hidden md:flex"/>y{" "}
             <span className="text-red-600">escalables</span>
           </h1>
           <p className="text-md sm:text-lg lg:text-xl text-gray-400">
-            Servicios de desarrollo full stack para emprendedores,<br />
+            Servicios de desarrollo full stack para emprendedores,<br className="hidden md:flex" />
             profesionales y empresas.
           </p>
           <div className="py-3 flex flex-col items-center md:items-start gap-4 ">

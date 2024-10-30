@@ -9,17 +9,20 @@ const projects = [
   },
   {
     title: "SPA + Pasarela de pagos recurrentes",
-    description: "Se implemento sistema de auth para gestion de cursos y membresias",
+    description:
+      "Se implemento sistema de auth para gestion de cursos y membresias",
     image: "/assets/project-2.png", // Cambia por la URL de la imagen del proyecto
   },
   {
     title: "Landing Page de Barberia",
-    description: "Desarrollamos el diseño, orientandolo a modo informativo para posicionarlos en internet",
+    description:
+      "Desarrollamos el diseño, orientandolo a modo informativo para posicionarlos en internet",
     image: "/assets/project-3.png", // Cambia por la URL de la imagen del proyecto
   },
   {
     title: "Diseño y maquetacion de web para constructora",
-    description: "Portafolio de constructora a modo informativo para atraer clientes y mostrar proyectos",
+    description:
+      "Portafolio de constructora a modo informativo para atraer clientes y mostrar proyectos",
     image: "/assets/project-4.png", // Cambia por la URL de la imagen del proyecto
   },
 ];
@@ -27,25 +30,28 @@ const projects = [
 const Projects = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="w-2/3 lg:container mx-auto text-center">
-      <h3 className="text-6xl text-black font-serif font-semibold mb-20">Proyectos</h3>
+      <div className="w-full md:w-2/3 lg:container mx-auto text-center">
+        <h3 className="text-3xl lg:text-6xl text-black font-serif font-semibold mb-5 lg:mb-20">
+          Proyectos
+        </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           {/* Columna 1 con pt-0 */}
           <div className="order-2 lg:order-1">
             <div className="grid grid-cols-1 gap-6 pt-0">
-              {projects.slice(0,2).map((project, index) => (
-                <div
-                  key={index}
-                  className=" rounded-lg overflow-hidden"
-                >
+              {projects.slice(0, 2).map((project, index) => (
+                <div key={index} className=" rounded-lg overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-72  object-top object-cover border border-slate-200  rounded-3xl"
                   />
                   <div className="pl-2 pt-2 mb-4 text-left">
-                    <h3 className="text-3xl text-black font-serif font-semibold">{project.title}</h3>
-                    <p className="text-gray-700 text-lg mb-2">{project.description}</p>
+                    <h3 className="text-3xl text-black font-serif font-semibold">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-700 text-lg mb-2">
+                      {project.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -72,18 +78,19 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-1 gap-6 pt-10">
               {projects.slice(2).map((project, index) => (
-                <div
-                  key={index}
-                  className=" rounded-lg overflow-hidden"
-                >
+                <div key={index} className=" rounded-lg overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-72 object-top object-cover border border-slate-200 rounded-3xl"
                   />
                   <div className="pl-2 pt-2 mb-4 text-left">
-                    <h3 className="text-3xl text-black font-serif font-semibold">{project.title}</h3>
-                    <p className="text-gray-700 text-lg mb-2">{project.description}</p>
+                    <h3 className="text-3xl text-black font-serif font-semibold">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-700 text-lg mb-2">
+                      {project.description}
+                    </p>
                   </div>
                 </div>
               ))}

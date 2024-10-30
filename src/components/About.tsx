@@ -41,10 +41,10 @@ const About = () => {
           <h2 className="text-red-500 text-lg font-semibold mb-2">
             Sobre nosotros
           </h2>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-2xl lg:text-5xl font-bold mb-6">
             Nuestro enfoque combina innovación, calidad y precios competitivos
           </h1>
-          <p className="text-gray-300 text-lg mb-6">
+          <p className="text-gray-300 text-md lg:text-lg mb-6">
             Nuestra misión es transformar ideas en soluciones digitales
             innovadoras que impulsen el éxito de nuestros clientes.
           </p>
