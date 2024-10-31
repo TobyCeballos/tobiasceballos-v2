@@ -1,6 +1,6 @@
 "use client"
 import { Badge } from "@/components/ui/badge";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Modal from "./components/Modal"; // Importa el componente modal
 const pricingPlans = [
@@ -22,7 +22,7 @@ const pricingPlans = [
   {
     "id": 2,
     "title": "Avanzado",
-    "price": "$26.499/mes",
+    "price": "$29.499/mes",
     "description": "Enfocado en pequeños negocios en crecimiento",
     "features": [
       "Desarrollo de sitio web de hasta 5 páginas con diseño responsive",
@@ -72,6 +72,9 @@ export default function PricingSection() {
   
     const openModal = (plan) => setSelectedPlan(plan);
     const closeModal = () => setSelectedPlan(null);
+    useEffect(() => {
+      document.title = "Precios | Tobias Ceballos"; // Cambia esto según la página
+    }, []);
   
     return (
         <section

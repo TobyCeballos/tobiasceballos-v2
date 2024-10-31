@@ -1,6 +1,6 @@
 //@ts-nocheck
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { IoIosArrowDown } from "react-icons/io";
 import { Toaster, toast } from "react-hot-toast";
@@ -21,6 +21,9 @@ export default function ContactForm() {
     plan: "",
   });
 
+  useEffect(() => {
+    document.title = "Contactate | Tobias Ceballos"; // Cambia esto según la página
+  }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({

@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import React from "react";
+import React, { useEffect } from "react";
 
 const projects = [
   {
@@ -27,6 +27,9 @@ const projects = [
 ];
 
 export default function page() {
+  useEffect(() => {
+    document.title = "Proyectos | Tobias Ceballos"; // Cambia esto según la página
+  }, []);
   return (
     <section className=" bg-neutral-900 py-20 bg-cover bg-fixed"
       style={{ backgroundImage: "url('./assets/bg.png')" }}>

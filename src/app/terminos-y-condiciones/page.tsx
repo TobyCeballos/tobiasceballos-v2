@@ -1,8 +1,11 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function TermsAndConditions() {
+  useEffect(() => {
+    document.title = "Términos y condiciones | Tobias Ceballos"; // Cambia esto según la página
+  }, []);
   return (
     <section
       className="bg-gray-100 py-10 bg-cover bg-fixed"

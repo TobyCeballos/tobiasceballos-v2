@@ -1,8 +1,11 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    document.title = "Política de privacidad | Tobias Ceballos"; // Cambia esto según la página
+  }, []);
   return (
     <section
       className="bg-gray-100 py-10 bg-cover bg-fixed"
