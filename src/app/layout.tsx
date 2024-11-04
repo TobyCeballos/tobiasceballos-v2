@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tobias Ceballos | Servicio de desarrollo web en Argentina",
-  description: "Soy Tobias Ceballos, desarrollador web en Mar del Plata, especializado en crear sitios modernos, optimizados y personalizados para negocios y emprendedores. Consultá nuestros planes de pago y servicios de community management.",
+  title: "Tobias Ceballos | Agencia Digital - Community Management, Desarrollo Web y Automatización",
+  description: "Tobias Ceballos es una agencia digital en Mar del Plata que ofrece servicios de community management, desarrollo web, diseño de páginas, consultoría digital y automatización para impulsar tu negocio online.",
 };
 
 export default function RootLayout({
@@ -28,17 +28,52 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <Head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Desarrollador web, Mar del Plata, Diseño web, Community Management, Servicios web, Planes de pago" />
-        <meta property="og:title" content="Tobias Ceballos | Servicio de desarrollo web en Mar del Plata" />
-        <meta property="og:description" content="Soy Tobias Ceballos, desarrollador web en Mar del Plata, especializado en crear sitios modernos y personalizados. Consultá por nuestros servicios y planes." />
+        <meta name="keywords" content="Tobias Ceballos, agencia digital, community management, desarrollo web, diseño de páginas web, consultoría digital, automatización, marketing digital, Mar del Plata" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Tobias Ceballos" />
+        <meta property="og:title" content="Tobias Ceballos | Agencia Digital - Community Management y Desarrollo Web" />
+        <meta property="og:description" content="Tobias Ceballos es una agencia digital en Mar del Plata especializada en community management, desarrollo web, diseño de páginas, consultoría digital y automatización." />
         <meta property="og:image" content="/assets/TC.png" /> {/* Cambiá esta ruta a la imagen que quieras mostrar */}
         <meta property="og:type" content="website" />
-        <meta name="description" content="Soy Tobias Ceballos, desarrollador web en Mar del Plata, especializado en crear sitios modernos y personalizados. Consultá por nuestros servicios y planes." />
         <meta property="og:url" content="https://tobiasceballos.com" /> {/* Colocá tu URL */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="description" content="Tobias Ceballos es una agencia digital en Mar del Plata que ofrece servicios de community management, desarrollo web, diseño de páginas, consultoría digital y automatización para potenciar tu negocio." />
+        <meta name="instagram:account" content="toby.ceballos" /> {/* Mencioná tu cuenta de Instagram */}
+        <link rel="canonical" href="https://tobiasceballos.com" />
+
+        {/* JSON-LD para rich snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Tobias Ceballos",
+              "url": "https://tobiasceballos.com",
+              "logo": "/assets/TC.png", // Ruta a tu logo
+              "sameAs": [
+                "https://www.instagram.com/toby.ceballos",
+                "https://www.linkedin.com/in/tobiasceballos"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+54 9 223 1234567", // Cambiá el número de teléfono
+                "contactType": "Customer Service",
+                "areaServed": "AR",
+                "availableLanguage": "Spanish"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mar del Plata",
+                "addressCountry": "AR"
+              }
+            }),
+          }}
+        />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -46,7 +81,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Toaster position="bottom-right" />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
