@@ -36,6 +36,7 @@ export default function RootLayout({
         <meta property="og:description" content="Soy Tobias Ceballos, desarrollador web en Mar del Plata, especializado en crear sitios modernos y personalizados. Consultá por nuestros servicios y planes." />
         <meta property="og:image" content="/assets/TC.png" /> {/* Cambiá esta ruta a la imagen que quieras mostrar */}
         <meta property="og:type" content="website" />
+        <meta name="description" content="Soy Tobias Ceballos, desarrollador web en Mar del Plata, especializado en crear sitios modernos y personalizados. Consultá por nuestros servicios y planes." />
         <meta property="og:url" content="https://tobiasceballos.com" /> {/* Colocá tu URL */}
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
