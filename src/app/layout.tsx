@@ -73,7 +73,7 @@ export default function RootLayout({
               }
             }),
           }}
-        />
+        /><script src="//code.tidio.co/k3vorvhfbpw7jnscfjdgapqzd4pysk1w.js" async></script>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
