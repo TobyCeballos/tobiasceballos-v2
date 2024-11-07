@@ -1,0 +1,11 @@
+# robots.txt para tu sitio web
+
+# Permite que todos los motores de búsqueda accedan a todo el sitio
+User-agent: *
+Disallow:
+
+# Bloquea el acceso a ciertas carpetas o páginas específicas si lo deseas
+Disallow: /admin/
+
+# Si tienes un sitemap.xml, indica su ubicación
+Sitemap: https://www.tobiasceballos.com/sitemap.xml
