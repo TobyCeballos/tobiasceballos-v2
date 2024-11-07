@@ -9,7 +9,7 @@ export function StoryCard() {
         <h2 className="text-3xl font-serif font-semibold text-black">Nuestra historia</h2>
       </div>
       <p className="text-neutral-600 mb-4">
-      Desde principios de 2022, hemos recorrido un camino que nos llevó de ser una startup pequeña, soñadora y con ganas de cambiar el mundo digital, a convertirnos en una agencia digital consolidada.
+      Desde principios de 2022, hemos recorrido un camino que nos llevó de ser una startup pequeña, soñadora y con ganas de cambiar el mundo digital, a convertirnos en una consultora digital consolidada.
       <br/>Nos especializamos en ayudar a empresas y emprendimientos a evolucionar y fortalecerse en el universo online. 
       <br/>A lo largo de estos años, nos hemos comprometido con la innovación y la creatividad para transformar ideas en realidades digitales que generan impacto.
 

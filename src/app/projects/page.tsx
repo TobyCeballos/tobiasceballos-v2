@@ -5,26 +5,32 @@ import React, { useEffect } from "react";
 const projects = [
   {
     id: 1,
-    title: "Proyecto 1",
-    description: "Descripción breve del Proyecto 1.",
-    imageUrl: "/assets/project-3.png", // Asegúrate de que la ruta sea correcta
-    link: "/proyectos/proyecto-1"
+    title: "Task Force | Consultora",
+    description: "Desarrollo de landing page, branding y posicionamiento SEO",
+    imageUrl: "/assets/project-5.png", // Asegúrate de que la ruta sea correcta
+    link: "https://taskforce.tobiasceballos.com"
   },
   {
     id: 2,
-    title: "Proyecto 2",
-    description: "Descripción breve del Proyecto 2.",
+    title: "Desarrollo SPA con pasarela de pagos",
+    description: "Programacion de platafomma educativa con pagos recurrentes",
     imageUrl: "/assets/project-2.png",
     link: "/proyectos/proyecto-2"
   },
   {
     id: 3,
-    title: "Proyecto 3",
-    description: "Descripción breve del Proyecto 3.",
+    title: "Re-diseño OrbelGrupo",
+    description: "A/B Testing orientado captar ventas.",
     imageUrl: "/assets/project-1.png",
-    link: "/proyectos/proyecto-3"
+    link: "https://orbelgrupo.es/"
   },
-  // Agrega más proyectos según sea necesario
+  {
+    id: 4,
+    title: "LA BARBER | Barberia",
+    description: "Desarrollo de landing page informativa",
+    imageUrl: "/assets/project-3.png", // Asegúrate de que la ruta sea correcta
+    link: "https://labarber.framer.website/"
+  },
 ];
 
 export default function page() {

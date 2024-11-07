@@ -9,7 +9,7 @@ import Projects from "@/components/Projects";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
-    document.title = "Tobias Ceballos | Agencia digital"; // Cambia esto según la página
+    document.title = "Tobias Ceballos | Consultora digital"; // Cambia esto según la página
   }, []);
   return (
     <>

@@ -48,7 +48,7 @@ const WorkLine = () => {
                       className="text-slate-500 opacity-25"
                     />
                   </div>
-                  <div className=" xl:block absolute -bottom-4 right-1/2 transform translate-x-1/2 rotate-90">
+                  <div className="block xl:hidden absolute -bottom-4 right-1/2 transform translate-x-1/2 rotate-90">
                     <FaArrowRight
                       size={30}
                       className="text-slate-500 opacity-25"
